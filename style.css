@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: cursive;
+
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(bg1.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.navbar {
+    height: 12vh;
+    width: 100vw;
+    background: rgba(107, 94, 94, 0.17);
+    backdrop-filter: blur(15px);
+    transition: 0.3s;
+}   
+
+.navbar:hover {
+    box-shadow: 10px 10px 10px rgba(9, 9, 9, 0.564) ,inset 10px 10px 10px rgba(255, 255, 255, 0.674);
+    border-radius: 10px;
+}
+
+
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+
+.nav-items {
+    list-style: none;
+    margin: 15px;
+    padding: 10px;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    height: 3vh;
+    width: 8vw;
+    font-weight: 700;
+    transition: 0.3s;
+    
+}
+
+/* ul li a:hover {
+    font-size: 1.2rem;
+    box-shadow: 10px 10px 10px rgba(9, 9, 9, 0.564) ,inset 10px 10px 10px rgba(255, 255, 255, 0.674);
+    border-radius: 10px;
+
+
+} */
+  .time{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    /* box-shadow: 10px 10px 10px rgba(9, 9, 9, 0.564) ,inset 10px 10px 10px rgba(255, 255, 255, 0.674); */
+}
+/* .time:hover{
+    font-size: 2rem;
+    box-shadow: -5px -5px 5px rgb(214, 210, 210), 5px -5px 5px rgb(223, 215, 215), -5px 5px 5px rgb(212, 202, 202), 5px 5px 5px rgb(150, 139, 139);
+    border-radius: 10px;
+
+} */
+
+
+
+li:first-child {
+    margin-right: auto;
+}
+
+.on {
+     position: relative;
+    right: 100%;
+    font-weight: 700;
+    border: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.5rem;
+}
+
+.off {
+    position: relative;
+    right: 100%;
+    font-weight: 700;
+    border: none;
+    display: none;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.5rem;
+}
+/* .off:hover {
+    font-size: 2rem;
+    box-shadow: -5px -5px 5px rgb(214, 210, 210), 5px -5px 5px rgb(223, 215, 215), -5px 5px 5px rgb(212, 202, 202), 5px 5px 5px rgb(150, 139, 139);
+    border-radius: 10px;
+}
+
+.on:hover {
+    font-size: 2rem;
+    box-shadow: -5px -5px 5px rgb(214, 210, 210), 5px -5px 5px rgb(223, 215, 215), -5px 5px 5px rgb(212, 202, 202), 5px 5px 5px rgb(150, 139, 139);
+    border-radius: 10px;
+} */
+
+.toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: transparent;
+
+
+}
+
+.main {
+    height: 50vh;
+    width: 40vw;
+    background: rgba(107, 94, 94, 0.17);
+    backdrop-filter: blur(15px);
+    margin-top: 80px;
+    display: flex;
+    border-radius: 20px;
+    border: 2px solid white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+#content {
+    height: 50vh;
+    width: 30vw;
+    max-height: 55vh;
+    max-width: 40vw;
+    background: transparent;
+    border: 2px solid white;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: cursive;
+    font-size: 1.1rem;
+
+}
+.main:hover{
+    box-shadow: 10px 10px 10px rgba(9, 9, 9, 0.564) ,inset 10px 10px 10px rgba(255, 255, 255, 0.674);
+    border-radius: 20px;
+}
+
+
+.buttons {
+    height: 15vh;
+    width: 40vw;
+    background: rgba(107, 94, 94, 0.17);
+    background: url(bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.buttons:hover{
+    box-shadow: 10px 10px 10px rgba(9, 9, 9, 0.564) ,inset 10px 10px 10px rgba(255, 255, 255, 0.674);
+    border-radius: 10px;
+}
+
+.button {
+    border-radius: 18px;
+    height: 10vh;
+    width: 8vw;
+    padding: 2px;
+    background: rgba(107, 94, 94, 0.17);
+    backdrop-filter: blur(15px);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.button:hover{
+    box-shadow: 10px 10px 10px rgba(9, 9, 9, 0.564) ,inset 10px 10px 10px rgba(255, 255, 255, 0.674);
+    border-radius: 10px;
+}
+
+.logo {
+    background: url(bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    width: 8vh;
+    height: 8vh;
+}
+
+
+/* For tablets (width between 600px to 900px) */
+@media (max-width: 900px) {
+  .main, .buttons {
+    width: 80vw;
+  }
+
+  #content {
+    width: 70vw;
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 20vw;
+    font-size: 1rem;
+  }
+
+  ul li a {
+    width: auto;
+    font-size: 0.9rem;
+  }
+
+  .logo {
+    width: 6vh;
+    height: 6vh;
+  }
+}
+
+/* For mobile devices (width up to 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .nav-items {
+    margin: 10px 0;
+  }
+
+  .main {
+    width: 90vw;
+    height: auto;
+    padding: 20px;
+  }
+
+  #content {
+    width: 80vw;
+    font-size: 0.95rem;
+  }
+
+  .buttons {
+    width: 90vw;
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .button {
+    width: 60vw;
+    height: 6vh;
+    font-size: 1rem;
+  }
+
+  .on, .off {
+    font-size: 1.2rem;
+    right: auto;
+  }
+
+  .logo {
+    width: 5vh;
+    height: 5vh;
+  }
+}
